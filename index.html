@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Login</title>
+    </head>
+    <body>
+        <center>
+            <h1>Hi! Please put in your staff key</h1>
+            <input type="text" id="key">
+            <br>
+            <br>
+            <button onclick="submitS()">Submit As Shashank</button>
+            <button onclick="submitA()">Submit As Arijay</button>
+        </center>
+        <script>
+        pinMA = 156712
+        pinMS = 243412
+         function submitA(){
+          var key = document.getElementById("key").value;
+          if (key == pinMA){
+            window.location = "managerA.html"
+          } 
+        }
+        function submitS(){
+            var key = document.getElementById("key").value;
+            if (key == pinMS){
+            window.location = "managerS.html"
+          } 
+        }
+        </script>
+    </body>
+</html>
